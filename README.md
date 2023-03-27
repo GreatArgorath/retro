@@ -1,4 +1,5 @@
-![Retro Logo](https://cdn.discordapp.com/attachments/877153311151775805/1089945686436491324/retro-02.png)
+![Retro Logo](https://cdn.discordapp.com/attachments/1089931043420778516/1089939277430919258/retro-01.png#gh-dark-mode-only)
+![Retro Logo](https://cdn.discordapp.com/attachments/877153311151775805/1089973926995706118/retrolight.png#gh-light-mode-only)
 An OTR generation tool.
 
 ## Getting Started
