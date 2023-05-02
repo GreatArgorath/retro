@@ -49,13 +49,13 @@ C
 
 To edit/add custom models you will need a few additional programs/files
 
-- [The Zelda OoT Decomp setup post asset extraction](https://github.com/zeldaret/oot) When following the setup for this, make sure to open the Makefile and set the NON_MATCHING flag to 0
+- [The Zelda OoT Decomp setup post asset extraction](https://github.com/zeldaret/oot)
 - Blender v3.2 or above
 - [The HarbourMasters fork of fast64 blender plugin](https://github.com/HarbourMasters/fast64)
 
 Once all of these are setup, open Blender and enable the fast64 plugin, then next to the viewport axis control visual you should see a small arrow pointing left, click and drag that to the left to display the fast64 settings.
 
-First, under the fast64 tab set the F3D microcode to `F3DEX2/LX2`, then under the Fast3D Global Settings set the Game to `OOT`, now a additional tab labeled OOT should display.
+Under the fast64 tab set the F3D microcode to `F3DEX2/LX2`, then under the Fast3D Global Settings set the Game to `OOT`, now a additional tab labeled OOT should display.
 
 Under the OOT tab make sure to set the `Decomp Path` to point to the folder containing your Decomp files(the folder containing assets, baserom, build and other files/folders)
 
@@ -65,7 +65,7 @@ At this point you have a few options, you could edit Child Links model as it is,
 
 All materials made must be `Fast3D Materials`, you can either convert the existing Principled BSDF materials to Fast3D under the Fast64 tab, or make new materials by pressing `Create Fast3D Material` in the Materials tab, set the appropriate preset to whatever type of material you need to make(Solid, Texture, Transparent and so on) additionally make sure each material has `Segment C (OPA)` enabled under the `OOT Dynamic Material Properties (OPA)` section.
 
-When you are finished and are ready to export, under Object mode select skeleton(In this case gLinkChildSkel) and on the Export section of OOT Skeleton Exporter do the following.
+When you are finished and are ready to export, under Object mode select the skeleton(In this case gLinkChildSkel) and on the Export section of OOT Skeleton Exporter do the following.
 
 - Enable the Custom Path option
 - Set the Skeleton selection as `gLinkChildSkel`
