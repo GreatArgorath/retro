@@ -55,27 +55,27 @@ To edit/add custom models you will need a few additional programs/files
 
 Once all of these are setup, open Blender and enable the fast64 plugin, then next to the viewport axis control visual you should see a small arrow pointing left, click and drag that to the left to display the fast64 settings.
 
-First, under the fast64 tab set the F3D microcode to F3DEX2/LX2, then under the Fast64 Global Settings set the Game to OOT, now a additional tab labeled OOT should display.
+First, under the fast64 tab set the F3D microcode to `F3DEX2/LX2`, then under the Fast3D Global Settings set the Game to `OOT`, now a additional tab labeled OOT should display.
 
-Under the OOT tab make sure to set the Decomp Path to point to the folder containing your Decomp files(the folder containing assets, baserom, build and other files/folders)
+Under the OOT tab make sure to set the `Decomp Path` to point to the folder containing your Decomp files(the folder containing assets, baserom, build and other files/folders)
 
 For the purposes of a example we will make a simple edit to Child Link, on the import section of OOT Skeleton Exporter select the mode to be Child Link then click Import Skeleton, after awhile it should then display two Child Link models, one is for standard view the other is for LOD, we suggest deleting the LOD model as it can cause issues preventing exporting to work. If you do this, we suggest you enable "Disable LOD" in-game.
 
 At this point you have a few options, you could edit Child Links model as it is, or replace it with a new model, either way it is very import that you make sure to weight paint it properly to the corresponding Vertex Groups or else the model may not display correctly in-game. If you for example replace Child Links head, you could make a new mesh and join it with the existing Child Link mesh and weight paint it to the appropriate groups.
 
-All materials made must be Fast3D Material, you can either convert the existing Principled BSDF materials to Fast3D under the Fast64 tab, or make new materials by pressing "Create Fast3D Material" in the Materials tab, set the appropriate preset to whatever type of material you need to make(Solid, Texture, Transparent and so on) additionally make sure each material has "Segment C (OPA)" enabled under the "OOT Dynamic Material Properties (OPA)" section.
+All materials made must be `Fast3D Materials`, you can either convert the existing Principled BSDF materials to Fast3D under the Fast64 tab, or make new materials by pressing `Create Fast3D Material` in the Materials tab, set the appropriate preset to whatever type of material you need to make(Solid, Texture, Transparent and so on) additionally make sure each material has `Segment C (OPA)` enabled under the `OOT Dynamic Material Properties (OPA)` section.
 
 When you are finished and are ready to export, under Object mode select skeleton(In this case gLinkChildSkel) and on the Export section of OOT Skeleton Exporter do the following.
 
 - Enable the Custom Path option
-- Set the Skeleton selection as "gLinkChildSkel
-- Set the Internal Game Path selection as "objects/object_link_child"
+- Set the Skeleton selection as `gLinkChildSkel`
+- Set the Internal Game Path selection as `objects/object_link_child`
 - Set the Export Path selection to a empty folder
 
 Finally, open Retro
 - Select Create OTR
 - Select `Custom`
-- Select folder containing the "objects" folder
+- Select folder containing the `objects` folder
 - `Stage Files`
 - `Finalize OTR`
 - Place the OTR file this generates inside of your `mods/` folder.
