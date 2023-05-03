@@ -61,7 +61,7 @@ Under the OOT tab make sure to set the `Decomp Path` to point to the folder cont
 
 Now that the setup is done, here are a few general things to keep in mind when working on any kind of model.
 
-All materials made must be `Fast3D Materials`, you can either convert the existing Principled BSDF materials to Fast3D under the Fast64 tab, or make new materials by pressing `Create Fast3D Material` in the Materials tab, set the appropriate preset to whatever type of material you need to make(Solid, Texture, Transparent and so on) additionally make sure each material has `Segment C (OPA)` enabled under the `OOT Dynamic Material Properties (OPA)` section.
+All materials made must be `Fast3D Materials`, you can either convert the existing Principled BSDF materials to Fast3D under the Fast64 tab, or make new materials by pressing `Create Fast3D Material` in the Materials tab, set the appropriate preset to whatever type of material you need to make(Solid, Texture, Transparent and so on) if the material uses a texture bigger then 32x32 make sure to enable `Large Texture Mode` for that material. Additionally make sure each material has `Segment C (OPA)` enabled under the `OOT Dynamic Material Properties (OPA)` section.
 
 If you are working with a model that uses a existing mesh from the decomp(such as ones that use Links body or hands) the built-in materials may require some adjustments, particularly with textures that use the Format `Color Index 8-bit` should be switched to `RGBA 16-bit` if you don't do this the texture may display incorrectly in-game.
 
